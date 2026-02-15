@@ -1,0 +1,102 @@
+/**
+ * KodNest Premium Build System — Base & Layout
+ */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--kn-background);
+  color: var(--kn-text);
+  font-family: var(--kn-font-sans);
+  font-size: var(--kn-text-size-body);
+  line-height: var(--kn-line-height-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+.kn-text-block { max-width: var(--kn-measure); }
+
+h1, .kn-h1 {
+  font-family: var(--kn-font-serif);
+  font-size: var(--kn-text-size-h1);
+  line-height: var(--kn-line-height-tight);
+  font-weight: 600;
+  margin: 0 0 var(--kn-space-2);
+  letter-spacing: -0.02em;
+}
+
+h2, .kn-h2 {
+  font-family: var(--kn-font-serif);
+  font-size: var(--kn-text-size-h2);
+  line-height: var(--kn-line-height-tight);
+  font-weight: 600;
+  margin: 0 0 var(--kn-space-2);
+}
+
+h3, .kn-h3 {
+  font-family: var(--kn-font-serif);
+  font-size: var(--kn-text-size-h3);
+  font-weight: 600;
+  margin: 0 0 var(--kn-space-1);
+}
+
+.kn-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.kn-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--kn-space-2) var(--kn-space-4);
+  border-bottom: 1px solid var(--kn-border);
+  background: var(--kn-background);
+}
+
+.kn-top-bar__project { font-weight: 500; color: var(--kn-text); }
+.kn-top-bar__progress { font-size: var(--kn-text-size-sm); color: var(--kn-text); opacity: 0.85; }
+.kn-top-bar__status {
+  font-size: var(--kn-text-size-sm);
+  padding: var(--kn-space-1) var(--kn-space-2);
+  border-radius: var(--kn-radius);
+  border: 1px solid var(--kn-border);
+  background: var(--kn-background);
+}
+
+.kn-context-header { padding: var(--kn-space-4) var(--kn-space-4) var(--kn-space-3); }
+.kn-context-header__headline {
+  font-family: var(--kn-font-serif);
+  font-size: var(--kn-text-size-h1);
+  font-weight: 600;
+  margin: 0 0 var(--kn-space-1);
+}
+.kn-context-header__subtext {
+  font-size: var(--kn-text-size-lead);
+  line-height: var(--kn-line-height-relaxed);
+  color: var(--kn-text);
+  opacity: 0.9;
+  margin: 0;
+  max-width: var(--kn-measure);
+}
+
+.kn-main {
+  display: flex;
+  flex: 1;
+  gap: var(--kn-space-4);
+  padding: 0 var(--kn-space-4) var(--kn-space-4);
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+.kn-workspace { flex: 0 1 70%; min-width: 0; }
+.kn-panel { flex: 0 0 30%; max-width: 400px; }
+
+.kn-proof-footer {
+  padding: var(--kn-space-3) var(--kn-space-4);
+  border-top: 1px solid var(--kn-border);
+  background: var(--kn-background);
+}
+.kn-proof-footer__list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: var(--kn-space-3); }
+.kn-proof-footer__item { display: flex; align-items: center; gap: var(--kn-space-1); font-size: var(--kn-text-size-sm); }

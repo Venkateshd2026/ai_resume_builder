@@ -1,0 +1,45 @@
+/**
+ * KodNest Premium Build System — Design Tokens
+ * Use these variables everywhere. Do not introduce new values.
+ */
+
+:root {
+  /* ——— Color (max 4 in use) ——— */
+  --kn-background: #F7F6F3;
+  --kn-text: #111111;
+  --kn-accent: #8B0000;
+  --kn-success: #4A5D4A;
+  --kn-warning: #8B7355;
+
+  /* Optional: borders and subtle UI from primary */
+  --kn-border: rgba(17, 17, 17, 0.12);
+  --kn-border-focus: #8B0000;
+
+  /* ——— Typography ——— */
+  --kn-font-serif: "Source Serif 4", "Lora", Georgia, serif;
+  --kn-font-sans: "Source Sans 3", "Inter", system-ui, sans-serif;
+
+  --kn-text-size-sm: 14px;
+  --kn-text-size-body: 17px;
+  --kn-text-size-lead: 18px;
+  --kn-text-size-h3: 24px;
+  --kn-text-size-h2: 32px;
+  --kn-text-size-h1: 40px;
+
+  --kn-line-height-tight: 1.4;
+  --kn-line-height-body: 1.65;
+  --kn-line-height-relaxed: 1.8;
+
+  --kn-measure: 720px;
+
+  /* ——— Spacing (only these 5 values) ——— */
+  --kn-space-1: 8px;
+  --kn-space-2: 16px;
+  --kn-space-3: 24px;
+  --kn-space-4: 40px;
+  --kn-space-5: 64px;
+
+  /* ——— Components ——— */
+  --kn-radius: 6px;
+  --kn-transition: 180ms ease-in-out;
+}
