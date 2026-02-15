@@ -1,0 +1,62 @@
+/**
+ * Print styling — /preview export
+ * White background, no accents, clean margins, page-break rules.
+ */
+
+@media print {
+  /* Hide navigation and UI */
+  .kn-top-bar,
+  .no-print,
+  .no-print * {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  /* Reset for printable area */
+  body,
+  main {
+    background: #fff !important;
+    color: #111 !important;
+    padding: 0 !important;
+  }
+
+  .resume-print-area {
+    display: block !important;
+    visibility: visible !important;
+    background: #fff !important;
+    color: #111 !important;
+    border: none !important;
+    box-shadow: none !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 16px 24px !important;
+  }
+
+  .resume-print-area * {
+    color: #111 !important;
+  }
+
+  .resume-print-area .resume-preview-modern aside {
+    background: rgba(0,0,0,0.08) !important;
+    color: #111 !important;
+  }
+
+  /* Avoid splitting entries across pages */
+  .resume-print-entry {
+    page-break-inside: avoid;
+  }
+
+  /* Consistent spacing, no overflow */
+  .resume-print-area section {
+    overflow: visible;
+    page-break-inside: avoid;
+  }
+
+  .resume-print-area h1,
+  .resume-print-area h2,
+  .resume-print-area p,
+  .resume-print-area div {
+    overflow: visible;
+    text-overflow: clip;
+  }
+}
