@@ -4,13 +4,13 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.NETLIFY ? '/' : '/rb/',
+  base: '/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
     },
   },
   server: {
-    open: '/rb/01-problem',
+    open: '/',
   },
 });
